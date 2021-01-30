@@ -11,4 +11,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    /*выбрал LinearLayout просто потому, что мне он показался самым оптимальным вариантом.
+    * более гибкий, чем Table или Grid, Frame вообще для этой цели не подходил,
+    * Constraint менее удобно настраивать под это дело */
 }
