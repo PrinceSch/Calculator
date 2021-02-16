@@ -16,4 +16,5 @@
     <string name="subtraction">-</string>
     <string name="multiplication">*</string>
     <string name="division">:</string>
+    <string name="theme_change">theme change</string>
 </resources>
