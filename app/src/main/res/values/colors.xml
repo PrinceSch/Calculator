@@ -14,4 +14,6 @@
     <color name="colorAccent">#AAB2E6</color>
     <color name="background">#009688</color>
     <color name="backgroundTint">#70009688</color>
+    <color name="otherButton">#531A50</color>
+    <color name="otherStroke">#423189</color>
 </resources>

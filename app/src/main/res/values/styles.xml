@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Buttons" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:height">@dimen/buttonHeight</item>
         <item name="android:backgroundTint">@color/buttons</item>
         <item name="strokeColor">@color/stroke</item>
@@ -15,6 +12,14 @@
         <item name="android:layout_marginStart">@dimen/margin</item>
         <item name="android:layout_marginEnd">@dimen/margin</item>
         <item name="android:layout_weight">25</item>
+    </style>
+
+    <style name="otherButtons">
+        <item name="android:height">@dimen/buttonHeight</item>
+        <item name="android:backgroundTint">@color/otherButton</item>
+        <item name="strokeColor">@color/otherStroke</item>
+        <item name="strokeWidth">@dimen/strokeButton</item>
+        <item name="android:textSize">@dimen/textSizeButton</item>
     </style>
 
 </resources>
