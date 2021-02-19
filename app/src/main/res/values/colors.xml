@@ -15,5 +15,5 @@
     <color name="background">#009688</color>
     <color name="backgroundTint">#70009688</color>
     <color name="otherButton">#531A50</color>
-    <color name="otherStroke">#423189</color>
+    <color name="otherStroke">#FF5722</color>
 </resources>

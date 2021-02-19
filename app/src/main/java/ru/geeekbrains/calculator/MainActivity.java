@@ -2,9 +2,12 @@ package ru.geeekbrains.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.google.android.material.switchmaterial.SwitchMaterial;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.textView);
@@ -64,6 +68,18 @@ public class MainActivity extends AppCompatActivity {
 
         Button button_equals = findViewById(R.id.button_equals);
         button_equals.setOnClickListener(v -> calculatorLogic.equalsButton(button_equals, textView));
+
+        Button[] buttons = {button0, button1, button2, button3, button4, button5, button6,
+                button7, button8, button9, button_add, button_clear, button_div, button_equals,
+                button_multi, button_sub};
+
+        SwitchMaterial switchTheme = findViewById(R.id.switch2);
+        switchTheme.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            for (Button b: buttons) {
+                b.setBackgroundColor(Color.parseColor("#531A50"));
+                b.setTextColor(Color.parseColor("#FF5722"));
+            }
+        });
 
     }
 
